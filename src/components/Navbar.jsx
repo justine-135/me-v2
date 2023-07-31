@@ -38,7 +38,7 @@ const Navbar = ({ theme, setTheme, menu, setMenu }) => {
       setMenu(false);
       allowScroll();
     }
-  }, [windowSize, setTheme, setMenu, allowScroll]);
+  }, [windowSize]);
 
   const handleOpenMenu = () => {
     setMenu(true);
