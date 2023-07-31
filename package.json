@@ -1,7 +1,7 @@
 {
   "name": "ju-portfolio",
   "version": "0.1.0",
-  "homepage": "https://justine-135.github.io/justine-upano",
+  "homepage": "https://justine-135.github.io/justineupano",
   "private": true,
   "dependencies": {
     "@react-spring/web": "^9.7.3",
