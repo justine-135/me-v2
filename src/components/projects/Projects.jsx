@@ -45,9 +45,7 @@ const Projects = () => {
     activeHighlight,
     activePersonal,
     activeAll,
-    hightlightData,
-    personalData,
-    projects,
+
   ]);
 
   const handleActiveHighlight = () => {
@@ -118,7 +116,6 @@ const Projects = () => {
             <div className="grid md:grid-cols-2 gap-8 w-full">
               {sortedProjects &&
                 sortedProjects.slice(0, limit).map((repo, index) => {
-                  console.log(sortedProjects.length);
                   return (
                     <Fade bottom key={index}>
                       <Project repo={repo} />
