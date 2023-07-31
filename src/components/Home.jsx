@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
-    <section className="flex justify-center items-center h-screen">
+    <section className="flex justify-center items-center h-screen" id="home-section" name="home-section">
       <div className="flex justify-between w-11/12 md:w-2/4 max-w-[550px]">
         <div className="flex flex-col items-center sm:items-start gap-2 w-full md:w-3/4">
           <TypeAnimation
