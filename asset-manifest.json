@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/justine-upano/static/css/main.acfee36d.css",
-    "main.js": "/justine-upano/static/js/main.8c1f0662.js",
-    "static/media/cute_dev.png": "/justine-upano/static/media/cute_dev.b2dfc6e68756639b4714.png",
-    "static/media/github.svg": "/justine-upano/static/media/github.0da23027724642bceb7736674bbf812b.svg",
-    "index.html": "/justine-upano/index.html",
-    "static/media/moon.svg": "/justine-upano/static/media/moon.0004f1ef74d078ff872455fe7f4ee924.svg",
-    "static/media/live.svg": "/justine-upano/static/media/live.4c54f2899cf79d0376b5975431251dc8.svg",
-    "static/media/linkedin.svg": "/justine-upano/static/media/linkedin.fbec1eaa91eb8e65b415b8084a332d9f.svg",
-    "static/media/exit.svg": "/justine-upano/static/media/exit.f84d8eb0cd0ee21b8400400e86124fbd.svg",
-    "static/media/folder.svg": "/justine-upano/static/media/folder.7fd9a1154b4691243e9118296b2d28ff.svg",
-    "static/media/menu.svg": "/justine-upano/static/media/menu.fda74093c4c5f2cc8ba4c5a89472d214.svg",
-    "static/media/facebook.svg": "/justine-upano/static/media/facebook.5b31b3be5edeaaece65f44643db3f13d.svg",
-    "static/media/rightArrow.svg": "/justine-upano/static/media/rightArrow.bfcc0e2ba1a9b6bd8299788248a44070.svg",
-    "main.acfee36d.css.map": "/justine-upano/static/css/main.acfee36d.css.map",
-    "main.8c1f0662.js.map": "/justine-upano/static/js/main.8c1f0662.js.map"
+    "main.css": "/justineupano/static/css/main.acfee36d.css",
+    "main.js": "/justineupano/static/js/main.994dec01.js",
+    "static/media/cute_dev.png": "/justineupano/static/media/cute_dev.b2dfc6e68756639b4714.png",
+    "static/media/github.svg": "/justineupano/static/media/github.0da23027724642bceb7736674bbf812b.svg",
+    "index.html": "/justineupano/index.html",
+    "static/media/moon.svg": "/justineupano/static/media/moon.0004f1ef74d078ff872455fe7f4ee924.svg",
+    "static/media/live.svg": "/justineupano/static/media/live.4c54f2899cf79d0376b5975431251dc8.svg",
+    "static/media/linkedin.svg": "/justineupano/static/media/linkedin.fbec1eaa91eb8e65b415b8084a332d9f.svg",
+    "static/media/exit.svg": "/justineupano/static/media/exit.f84d8eb0cd0ee21b8400400e86124fbd.svg",
+    "static/media/folder.svg": "/justineupano/static/media/folder.7fd9a1154b4691243e9118296b2d28ff.svg",
+    "static/media/menu.svg": "/justineupano/static/media/menu.fda74093c4c5f2cc8ba4c5a89472d214.svg",
+    "static/media/facebook.svg": "/justineupano/static/media/facebook.5b31b3be5edeaaece65f44643db3f13d.svg",
+    "static/media/rightArrow.svg": "/justineupano/static/media/rightArrow.bfcc0e2ba1a9b6bd8299788248a44070.svg",
+    "main.acfee36d.css.map": "/justineupano/static/css/main.acfee36d.css.map",
+    "main.994dec01.js.map": "/justineupano/static/js/main.994dec01.js.map"
   },
   "entrypoints": [
     "static/css/main.acfee36d.css",
-    "static/js/main.8c1f0662.js"
+    "static/js/main.994dec01.js"
   ]
 }
