@@ -55,9 +55,16 @@ const Navbar = ({ theme, setTheme, menu, setMenu }) => {
       <div className="fixed -top-5 h-20 w-full blur-md md:blur-none bg-white dark:bg-darkBg md:bg-transparent md:dark:bg-transparent z-10"></div>
       <nav className="fixed top-0 flex justify-center w-full bg-transparent h-16 z-20 md:hidden">
         <div className="flex justify-between items-center w-11/12">
-          <div className="font-extrabold text-xl dark:text-darkH">
+          <Link
+            to="home-section"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="font-extrabold text-xl dark:text-darkH cursor-pointer"
+            onClick={handleCloseMenu}
+                >
             Justine's Hub
-          </div>
+          </Link>
           <button className="" onClick={handleOpenMenu}>
             <Menu className="h-8 w-8 dark:fill-darkH" />
           </button>
@@ -75,9 +82,16 @@ const Navbar = ({ theme, setTheme, menu, setMenu }) => {
           <Exit className="h-8 w-8 dark:fill-darkH" />
         </button>
         <div className="flex flex-col md:flex-row items-center justify-between w-11/12 max-w-[1156px]">
-          <p className="hidden md:block font-extrabold text-xl dark:text-darkH">
+          <Link
+            to="home-section"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="hidden md:block font-extrabold text-xl cursor-pointer dark:text-darkH"
+            onClick={handleCloseMenu}
+                >
             Justine's Hub
-          </p>
+          </Link>
           <Fade cascade right when={windowSize < 768 ? menu : true}>
             <ul className="flex flex-col items-center md:items-start font-semibold md:flex-row gap-6 dark:text-darkP">
               <li>
