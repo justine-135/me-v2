@@ -27,7 +27,7 @@ const repos = [
   },
   {
     name: "Blog Posting Site",
-    type: "highlight",
+    type: "other",
     body: "The MERN-based blog web app offers users a seamless, modern platform to create, manage, and share dynamic blog posts worldwide.",
     createdAt: "2023-07-22",
     languages: [
