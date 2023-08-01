@@ -278,8 +278,8 @@ const repos = [
         bg: "#fda4af",
       },
     ],
-    repoUrl: "https://github.com/justine-135/Bookmark",
-    liveUrl: "https://justine-135.github.io/Bookmark/",
+    repoUrl: "https://github.com/justine-135/Todo",
+    liveUrl: "https://justine-135.github.io/Todo/",
   },
   {
     name: "Food Recipe App",
@@ -300,8 +300,8 @@ const repos = [
         bg: "#7dd3fc",
       },
     ],
-    repoUrl: "https://github.com/justine-135/Bookmark",
-    liveUrl: "https://justine-135.github.io/Bookmark/",
+    repoUrl: "https://github.com/justine-135/food-recipe-app",
+    liveUrl: "https://justine-135.github.io/food-recipe-app/",
   },
   {
     name: "Rock Paper Scissor",
