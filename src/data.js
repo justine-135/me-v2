@@ -1,9 +1,39 @@
 const repos = [
   {
     name: "Motion Capture",
+    subname: "Web development final project",
+    route: "web_final",
     type: "highlight",
     body: "The NextJS-based frontend offers a user-friendly interface for easy access and control of motion capture functionality, while the NodeJS backend manages data processing, storage, and communication with the Python-based camera module.",
     createdAt: "2023-01-16",
+    introText: "as dljasd klasdljka ssjdalk ",
+    roles: [
+      {
+        name: "Lead Developer",
+      },
+    ],
+    responsibilities: [
+      {
+        name: "Backend Developer",
+      },
+      {
+        name: "UI design",
+      },
+    ],
+    team: [
+      {
+        name: "Richard manipon",
+      },
+      {
+        name: "Daryl Magpantay",
+      },
+      {
+        name: "Louise Yagi",
+      },
+      {
+        name: "James Ferrer",
+      },
+    ],
     languages: [
       {
         name: "NextJS",
@@ -110,10 +140,28 @@ const repos = [
     liveUrl: "https://justine-135.github.io/react-countries/",
   },
   {
-    name: "Learning Management System",
+    name: "Student Record System",
+    subname: "Intern project",
+    route: "intern_project",
     type: "highlight",
-    body: "The PHP and MySQL-based learning management system web app provides a comprehensive grading system and admin management for instructors and administrators. PHP handles data processing, authentication, and content management, while MySQL efficiently stores course materials, user profiles, and progress tracking data.",
+    body: "Platform designed to securely store, manage, and organize student-related information and data, including academic records, grades, and personal details.",
     createdAt: "2023-03-27",
+    introText: "as dljasd klasdljka ssjdalk ",
+    roles: [
+      {
+        name: "Lead Developer",
+      },
+    ],
+    responsibilities: [
+      {
+        name: "Fullstack Developer",
+      },
+    ],
+    team: [
+      {
+        name: "Daryl Magpantay",
+      },
+    ],
     languages: [
       {
         name: "PHP",
@@ -137,9 +185,44 @@ const repos = [
   },
   {
     name: "Restaurant Ordering System",
+    subname: "Research final project",
+    route: "research_project",
     type: "highlight",
     body: "With its user-friendly interface and efficient order management, the samgyupsal ordering system web app enhances customer satisfaction and helps restaurant owners optimize their operations for a smoother and more delightful dining experience.",
     createdAt: "2022-08-09",
+    introText: "as dljasd klasdljka ssjdalk ",
+    roles: [
+      {
+        name: "Lead Developer",
+      },
+    ],
+    responsibilities: [
+      {
+        name: "Fullstack Developer",
+      },
+      {
+        name: "UI design",
+      },
+    ],
+    team: [
+      {
+        name: "Richard manipon",
+      },
+      {
+        name: "Daryl Magpantay",
+      },
+      {
+        name: "Louise Yagi",
+      },
+      {
+        name: "James Ferrer",
+      },
+    ],
+    features: [
+      {
+        text: "",
+      },
+    ],
     languages: [
       {
         name: "PHP",
@@ -161,32 +244,32 @@ const repos = [
     repoUrl: "https://github.com/justine-135/dadz-grill-thesis",
     liveUrl: "",
   },
-  {
-    name: "School Canteen Ordering System",
-    type: "highlight",
-    body: "The canteen ordering system web app built with Django optimizes the food ordering process, enhancing customer satisfaction and operational efficiency in canteen environments.",
-    createdAt: "2021-10-23",
-    languages: [
-      {
-        name: "Django",
-        bg: "#6ee7b7",
-      },
-      {
-        name: "Javascript",
-        bg: "#fcd34d",
-      },
-      {
-        name: "CSS",
-        bg: "#7dd3fc",
-      },
-      {
-        name: "MySQL",
-        bg: "#fde047",
-      },
-    ],
-    repoUrl: "https://github.com/justine-135/Tupc-Ecafeteria-Django-ver",
-    liveUrl: "",
-  },
+  // {
+  //   name: "School Canteen Ordering System",
+  //   type: "highlight",
+  //   body: "The canteen ordering system web app built with Django optimizes the food ordering process, enhancing customer satisfaction and operational efficiency in canteen environments.",
+  //   createdAt: "2021-10-23",
+  //   languages: [
+  //     {
+  //       name: "Django",
+  //       bg: "#6ee7b7",
+  //     },
+  //     {
+  //       name: "Javascript",
+  //       bg: "#fcd34d",
+  //     },
+  //     {
+  //       name: "CSS",
+  //       bg: "#7dd3fc",
+  //     },
+  //     {
+  //       name: "MySQL",
+  //       bg: "#fde047",
+  //     },
+  //   ],
+  //   repoUrl: "https://github.com/justine-135/Tupc-Ecafeteria-Django-ver",
+  //   liveUrl: "",
+  // },
   {
     name: "To Do List - DnD",
     type: "other",
