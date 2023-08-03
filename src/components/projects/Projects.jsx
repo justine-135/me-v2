@@ -4,6 +4,7 @@ import HeadShake from "react-reveal/HeadShake";
 import { Element } from "react-scroll";
 import data from "../../data";
 import Project from "./Project";
+import Highlight from "./Highlight";
 
 const Projects = () => {
   const projects = data.repos;
@@ -41,12 +42,7 @@ const Projects = () => {
       );
       return;
     }
-  }, [
-    activeHighlight,
-    activePersonal,
-    activeAll,
-
-  ]);
+  }, [activeHighlight, activePersonal, activeAll]);
 
   const handleActiveHighlight = () => {
     setActiveHighlight(true);
@@ -99,7 +95,7 @@ const Projects = () => {
               }`}
               onClick={handleActivePersonal}
             >
-              Personal
+              Sides
             </button>
             <button
               className={`pl-1 pr-5 font-bold border-b-4 dark:text-darkH ${
@@ -113,12 +109,23 @@ const Projects = () => {
             </button>
           </div>
           <div className="flex flex-col items-center gap-10">
-            <div className="grid md:grid-cols-2 gap-8 w-full">
+            <div
+              className={`grid gap-8 w-full ${
+                activeAll || (activePersonal && "md:grid-cols-2")
+              }`}
+            >
               {sortedProjects &&
                 sortedProjects.slice(0, limit).map((repo, index) => {
+                  if (activeAll || activePersonal) {
+                    return (
+                      <Fade bottom key={index}>
+                        <Project repo={repo} />
+                      </Fade>
+                    );
+                  }
                   return (
                     <Fade bottom key={index}>
-                      <Project repo={repo} />
+                      <Highlight repo={repo} />
                     </Fade>
                   );
                 })}
