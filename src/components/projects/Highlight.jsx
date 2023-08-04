@@ -44,25 +44,27 @@ const Project = ({ repo }) => {
           <p className="font-josefin text-p mt-2 mb-5 dark:text-darkP text-sm sm:text-base">
             {repo.body}
           </p>
-          <Link
-            className="px-2 border-2 border-black rounded-md font-semibold"
-            to={`/projects/${repo.route}`}
-          >
-            Read more
-          </Link>
-          {/* <ul className="flex flex-wrap gap-2 w-4/5">
-            {repo.languages.map((language, index) => {
-              return (
-                <li
-                  key={index}
-                  className="text-xs py-1 px-2 rounded-md font-bold"
-                  style={{ background: language.bg }}
-                >
-                  {language.name}
-                </li>
-              );
-            })}
-          </ul> */}
+          <div className="flex justify-between">
+            <ul className="flex flex-wrap gap-2 w-4/5">
+              {repo.languages.map((language, index) => {
+                return (
+                  <li
+                    key={index}
+                    className="text-xs py-1 px-2 rounded-md font-bold"
+                    style={{ background: language.bg }}
+                  >
+                    {language.name}
+                  </li>
+                );
+              })}
+            </ul>
+            <Link
+              className="px-2 border-2 border-black rounded-md font-semibold hover:bg-black hover:text-white hover:border-white dark:bg-darkBg dark:border-darkH dark:text-darkH dark:hover:bg-darkH dark:hover:text-darkBg duration-75"
+              to={`/projects/${repo.route}`}
+            >
+              Read more
+            </Link>
+          </div>
         </div>
       </div>
     </div>
