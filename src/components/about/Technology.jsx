@@ -8,7 +8,7 @@ const Technology = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between">
       <Fade delay={300}>
-        <p className="text-sm text-title-sm text-center mb-10 sm:mb-4 sm:text-left">
+        <p className="text-sm text-title-sm text-center mb-10 sm:mb-4 sm:text-left dark:text-darkP">
           / Technology
         </p>
       </Fade>

@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between">
       <Fade delay={300}>
-        <p className="text-sm text-title-sm text-center mb-10 sm:mb-4 sm:text-left">
+        <p className="text-sm text-title-sm text-center mb-10 sm:mb-4 sm:text-left dark:text-darkP">
           / Experience
         </p>
       </Fade>
@@ -26,7 +26,7 @@ const Experience = () => {
                 </a>
                 <p className="font-semibold dark:text-darkH">{exp.position}</p>
                 <div className="my-2 text-xs text-p dark:text-darkP">
-                  <span>{exp.startDate}</span>-<span>{exp.endDate}</span>
+                  <span>{exp.startDate}</span> - <span>{exp.endDate}</span>
                 </div>
                 <div className="flex flex-col gap-4 mt-2">
                   {exp.achievements.map((achievement, index) => {
