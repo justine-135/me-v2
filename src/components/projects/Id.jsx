@@ -28,12 +28,16 @@ const Id = ({ setIsHome }) => {
                       id="landing-section"
                       name="landing-section"
                     >
-                      <h1 className="text-3xl font-bold">{repo.name}</h1>
-                      <p className="my-5 text-p">{repo.introText}</p>
+                      <h1 className="text-3xl font-bold dark:text-darkH">
+                        {repo.name}
+                      </h1>
+                      <p className="my-5 text-p dark:text-darkP">
+                        {repo.introText}
+                      </p>
                     </div>
-                    <div className="flex justify-center gap-12 w-4/5">
+                    <div className="flex justify-center gap-12 w-4/5 dark:text-darkP">
                       <div>
-                        <h5 className="font-semibold">Role</h5>
+                        <h5 className="font-semibold dark:text-darkH">Role</h5>
                         <ul className="mt-1">
                           {repo.roles.map((role, index) => {
                             return <li key={index}>{role.name}</li>;
@@ -41,7 +45,9 @@ const Id = ({ setIsHome }) => {
                         </ul>
                       </div>
                       <div>
-                        <h5 className="font-semibold">Responsibilities</h5>
+                        <h5 className="font-semibold dark:text-darkH">
+                          Responsibilities
+                        </h5>
                         <ul className="mt-1">
                           {repo.responsibilities.map(
                             (responsibility, index) => {
@@ -51,7 +57,7 @@ const Id = ({ setIsHome }) => {
                         </ul>
                       </div>
                       <div>
-                        <h5 className="font-semibold">Team</h5>
+                        <h5 className="font-semibold dark:text-darkH">Team</h5>
                         <ul className="mt-1">
                           {repo.teams.map((team, index) => {
                             return <li key={index}>{team.name}</li>;
@@ -62,31 +68,35 @@ const Id = ({ setIsHome }) => {
                   </div>
 
                   <div className="grid place-items-center gap-4 my-12 ">
-                    <div className="p-5 bg-red-100 rounded-lg w-4/5">
-                      <h5 className="font-semibold">Problem</h5>
-                      <p className="text-p">{repo.problem}</p>
+                    <div className="p-5 bg-red-100 rounded-lg w-4/5 dark:bg-darkBorder">
+                      <h5 className="font-semibold dark:text-darkH">Problem</h5>
+                      <p className="text-p dark:text-darkP">{repo.problem}</p>
                     </div>
-                    <div className="p-5 bg-sky-100 rounded-lg w-4/5">
-                      <h5 className="font-semibold">Answer</h5>
-                      <p className="text-p">{repo.solution}</p>
+                    <div className="p-5 bg-sky-100 rounded-lg w-4/5 dark:bg-darkBorder">
+                      <h5 className="font-semibold dark:text-darkH">Answer</h5>
+                      <p className="text-p dark:text-darkP">{repo.solution}</p>
                     </div>
                   </div>
-
                   <div>
-                    <h3 className="mb-5 text-xl font-bold">Features</h3>
-                    <div className="grid">
+                    <h3 className="mb-5 text-xl font-bold dark:text-darkH">
+                      Features
+                    </h3>
+                    <div className="">
                       {repo.features.map((feature, index) => {
                         return (
-                          <div className="mb-12" key={index}>
-                            <div>
-                              <img
-                                className="w-full rounded-lg shadow-md hover:shadow-lg duration-75 py-5"
-                                src={require(`../../images/${route}/${feature.img}`)}
-                                alt="prototype"
-                              />
+                          <div
+                            className="mb-12 grid place-items-center"
+                            key={index}
+                          >
+                            <img
+                              className="rounded-lg shadow-md hover:shadow-lg duration-75 py-5"
+                              src={require(`../../images/${route}/${feature.img}`)}
+                              alt="prototype"
+                            />
 
-                              <p className="mt-2 text-p">{feature.body}</p>
-                            </div>
+                            <p className="mt-2 text-p dark:text-darkP">
+                              {feature.body}
+                            </p>
                           </div>
                         );
                       })}
@@ -95,7 +105,7 @@ const Id = ({ setIsHome }) => {
                   {repo.otherImages && (
                     <div>
                       <h3 className="mb-5 text-xl font-bold">Gallery</h3>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-3 gap-2">
                         {repo.otherImages.map((other, index) => {
                           return (
                             <div key={index}>
