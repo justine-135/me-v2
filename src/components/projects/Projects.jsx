@@ -97,7 +97,7 @@ const Projects = () => {
             >
               Sides
             </button>
-            <button
+            {/* <button
               className={`pl-1 pr-5 font-bold border-b-4 dark:text-darkH ${
                 activeAll
                   ? " border-[#0ea5e9]"
@@ -106,7 +106,7 @@ const Projects = () => {
               onClick={handleActiveAll}
             >
               All
-            </button>
+            </button> */}
           </div>
           <div className="flex flex-col items-center gap-10">
             <div
