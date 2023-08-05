@@ -17,7 +17,7 @@ const Id = ({ setIsHome }) => {
   return (
     <div className="flex items-center justify-center w-full">
       <ScrollTopButton />
-      <div className="mt-24 md:w-3/5">
+      <div className="mt-24 md:w-3/5 max-w-[772px]">
         {repos &&
           repos.map((repo, index) => {
             if (repo.route === route) {
@@ -25,12 +25,12 @@ const Id = ({ setIsHome }) => {
                 <div className="" key={index}>
                   <div className="grid place-items-center">
                     <div
-                      className=" w-4/5"
+                      className="w-11/12 sm:w-4/5"
                       id="landing-section"
                       name="landing-section"
                     >
                       <div className="flex items-center gap-4">
-                        <h1 className="text-3xl font-bold dark:text-darkH">
+                        <h1 className="text-xl sm:text-3xl font-bold dark:text-darkH">
                           {repo.name}
                         </h1>
                         <a href={repo.repoUrl} target="_blank" rel="noreferrer">
@@ -38,16 +38,23 @@ const Id = ({ setIsHome }) => {
                         </a>{" "}
                       </div>
 
-                      <p className="my-5 text-p dark:text-darkP">
+                      <p className="my-2 sm:my-5 text-p text-sm sm:text-base dark:text-darkP">
                         {repo.introText}
                       </p>
                     </div>
-                    <div className="flex justify-center gap-12 w-4/5 dark:text-darkP">
+                    <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-12 w-11/12 sm:w-4/5 dark:text-darkP">
                       <div>
                         <h5 className="font-semibold dark:text-darkH">Role</h5>
                         <ul className="mt-1">
                           {repo.roles.map((role, index) => {
-                            return <li key={index}>{role.name}</li>;
+                            return (
+                              <li
+                                key={index}
+                                className="text-p text-sm sm:text-base dark:text-darkP"
+                              >
+                                {role.name}
+                              </li>
+                            );
                           })}
                         </ul>
                       </div>
@@ -58,7 +65,14 @@ const Id = ({ setIsHome }) => {
                         <ul className="mt-1">
                           {repo.responsibilities.map(
                             (responsibility, index) => {
-                              return <li key={index}>{responsibility.name}</li>;
+                              return (
+                                <li
+                                  key={index}
+                                  className="text-p text-sm sm:text-base dark:text-darkP"
+                                >
+                                  {responsibility.name}
+                                </li>
+                              );
                             }
                           )}
                         </ul>
@@ -67,7 +81,14 @@ const Id = ({ setIsHome }) => {
                         <h5 className="font-semibold dark:text-darkH">Team</h5>
                         <ul className="mt-1">
                           {repo.teams.map((team, index) => {
-                            return <li key={index}>{team.name}</li>;
+                            return (
+                              <li
+                                key={index}
+                                className="text-p text-sm sm:text-base dark:text-darkP"
+                              >
+                                {team.name}
+                              </li>
+                            );
                           })}
                         </ul>
                       </div>
@@ -77,46 +98,51 @@ const Id = ({ setIsHome }) => {
                   {repo.problem && (
                     <div className="grid place-items-center gap-4 my-12 ">
                       <div className="p-5 bg-red-100 rounded-lg w-4/5 dark:bg-darkBorder">
-                        <h5 className="font-semibold dark:text-darkH">
+                        <h5 className="font-semibold dark:text-darkH text-center sm:text-left ">
                           Problem
                         </h5>
-                        <p className="text-p dark:text-darkP">{repo.problem}</p>
+                        <p className="text-p dark:text-darkP text-sm sm:text-base">
+                          {repo.problem}
+                        </p>
                       </div>
                       <div className="p-5 bg-sky-100 rounded-lg w-4/5 dark:bg-darkBorder">
-                        <h5 className="font-semibold dark:text-darkH">
+                        <h5 className="font-semibold dark:text-darkH text-center sm:text-left">
                           Answer
                         </h5>
-                        <p className="text-p dark:text-darkP">
+                        <p className="text-p dark:text-darkP text-sm sm:text-base">
                           {repo.solution}
                         </p>
                       </div>
                     </div>
                   )}
 
-                  <div>
-                    <h3 className="mb-5 text-xl font-bold dark:text-darkH">
-                      Features
-                    </h3>
-                    <div className="">
-                      {repo.features &&
-                        repo.features.map((feature, index) => {
-                          return (
-                            <div
-                              className="mb-12 grid place-items-center"
-                              key={index}
-                            >
-                              <img
-                                className="rounded-lg shadow-md hover:shadow-lg duration-75 py-5"
-                                src={require(`../../images/${route}/${feature.img}`)}
-                                alt="prototype"
-                              />
+                  <div className="w-full">
+                    <div className="grid place-items-center">
+                      <h3 className="mb-5 text-xl font-bold dark:text-darkH self-start">
+                        Features and Functionalities
+                      </h3>
 
-                              <p className="mt-2 text-p dark:text-darkP">
-                                {feature.body}
-                              </p>
-                            </div>
-                          );
-                        })}
+                      <div className="w-11/12 sm:w-full max-w-[667px]">
+                        {repo.features &&
+                          repo.features.map((feature, index) => {
+                            return (
+                              <div
+                                className="mb-12 grid place-items-center"
+                                key={index}
+                              >
+                                <img
+                                  className="rounded-lg shadow-md hover:shadow-lg duration-75 py-5"
+                                  src={require(`../../images/${route}/${feature.img}`)}
+                                  alt="prototype"
+                                />
+
+                                <p className="mt-2 text-p dark:text-darkP text-sm sm:text-base">
+                                  {feature.body}
+                                </p>
+                              </div>
+                            );
+                          })}
+                      </div>
                     </div>
                   </div>
                   {/* {repo.otherImages && repo.otherImages && (
