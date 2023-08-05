@@ -82,7 +82,7 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
         >
           <Exit className="h-8 w-8 dark:fill-darkH" />
         </button>
-        <div className="flex flex-col md:flex-row items-center justify-between w-11/12 max-w-[1156px]">
+        <div className="flex flex-col md:flex-row items-center justify-between w-11/12 max-w-[1256px]">
           <ScrollLink
             to="home-section"
             spy={true}
@@ -130,7 +130,20 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
                 </li>
               </ul>
             ) : (
-              <RouterLink to="/justineupano">Go back</RouterLink>
+              <div className="flex gap-4">
+                <button
+                  className="cursor-pointer hover:fill-darkBg"
+                  onClick={handleThemeSwitch}
+                >
+                  <Moon className="h-6 w-6 pointer-events-none dark:fill-darkH" />
+                </button>
+                <RouterLink
+                  className="font-semibold hover:underline hover:underline-offset-2 dark:text-darkP duration-75"
+                  to="/justineupano"
+                >
+                  Go back
+                </RouterLink>
+              </div>
             )}
           </Fade>
         </div>
