@@ -111,12 +111,12 @@ const Projects = () => {
           <div className="flex flex-col items-center gap-10">
             <div
               className={`grid gap-8 w-full ${
-                activeAll || (activePersonal && "md:grid-cols-2")
+                activePersonal && "md:grid-cols-2"
               }`}
             >
               {sortedProjects &&
                 sortedProjects.slice(0, limit).map((repo, index) => {
-                  if (activeAll || activePersonal) {
+                  if (activePersonal) {
                     return (
                       <Fade bottom key={index}>
                         <Project repo={repo} />
