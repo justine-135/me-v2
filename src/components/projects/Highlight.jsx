@@ -36,7 +36,7 @@ const Project = ({ repo }) => {
               )}
             </ul>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row sm:gap-2">
             <h5 className="font-bold dark:text-darkH">{repo.name} -</h5>
             <span className="dark:text-darkH">{repo.subname}</span>
           </div>
@@ -44,7 +44,7 @@ const Project = ({ repo }) => {
           <p className="font-josefin text-p mt-2 mb-5 dark:text-darkP text-sm sm:text-base">
             {repo.body}
           </p>
-          <div className="flex justify-between">
+          <div className="flex items-start gap-2 justify-between flex-col sm:flex-row sm:gap-0">
             <ul className="flex flex-wrap gap-2 w-4/5">
               {repo.languages.map((language, index) => {
                 return (
