@@ -140,6 +140,7 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
                 <RouterLink
                   className="font-semibold hover:underline hover:underline-offset-2 dark:text-darkP duration-75"
                   to="/justineupano"
+                  onClick={handleCloseMenu}
                 >
                   Go back
                 </RouterLink>
