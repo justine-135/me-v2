@@ -1,12 +1,17 @@
 const repos = [
   {
     name: "Motion Capture",
-    subname: "Web development final project",
-    route: "web_final",
+    subname: "Embedded System final project",
+    route: "motion_capture",
     type: "highlight",
     body: "The NextJS-based frontend offers a user-friendly interface for easy access and control of motion capture functionality, while the NodeJS backend manages data processing, storage, and communication with the Python-based camera module.",
     createdAt: "2023-01-16",
-    introText: "as dljasd klasdljka ssjdalk ",
+    introText:
+      "We developed a motion capture app using Python and NextJS for our final project in our subject Embedded Systems. We used Python with packages to enable movement sensing during oncam and call an API to record the start time, end time, and the captured image as BLOB file. To authenticate users to the web system, we used the NextAuth package and bcrypt to hash passwords to the database.",
+    // problem:
+    //   "Teachers often face a challenging task when searching for a student's document, as they navigate through stacks of papers, envelopes, and drawers. Additionally, the predicament extends to former students who lack saved information due to the unfortunate reality of lost documents.",
+    // solution:
+    //   "To address the issue, a web based student record system that provides a record-keeping with quick access to student documents, safe storage for current and past students, organized data, automated tasks, and better communication among everyone involved. This digital tool kicks out the old hassles of paper records, making data management accurate, communication effective, and decision-making smart in education.",
     roles: [
       {
         name: "Lead Developer",
@@ -20,7 +25,7 @@ const repos = [
         name: "UI design",
       },
     ],
-    team: [
+    teams: [
       {
         name: "Richard manipon",
       },
@@ -32,6 +37,16 @@ const repos = [
       },
       {
         name: "James Ferrer",
+      },
+    ],
+    features: [
+      {
+        body: "To access the web system, sign up and login.",
+        img: "login.gif",
+      },
+      {
+        body: "The homepage displays the screenshots of the images captured using python. Each row details displays the start and end time of the capture.",
+        img: "home.gif",
       },
     ],
     languages: [
@@ -142,7 +157,7 @@ const repos = [
   {
     name: "Student Record System",
     subname: "Intern project",
-    route: "intern_project",
+    route: "student_record_system",
     type: "highlight",
     body: "Platform designed to securely store, manage, and organize student-related information and data, including academic records, grades, and personal details.",
     createdAt: "2023-03-27",
@@ -168,6 +183,10 @@ const repos = [
       },
     ],
     languages: [
+      {
+        name: "Bootstrap",
+        bg: "#c084fc",
+      },
       {
         name: "PHP",
         bg: "#a5b4fc",
@@ -696,7 +715,7 @@ const experiences = [
         text: "For our research project, me and my team created an online ordering system called Dad'z GrillHouse for a local samgyupsal (Korean BBQ) restaurant. Customers can order their food online, and the restaurant staff can easily keep track of the orders using a smart caller device. It makes the dining experience so much smoother and better.",
       },
       {
-        text: "In our web development course, we built web-based motion capture system using a regular webcam and Python. With this new technology, users can capture and analyze motion data for all kinds of uses. It's a versatile and easy-to-use tool.",
+        text: "In our embedded systems subject, we built web-based motion capture system using a regular webcam and Python. With this new technology, users can capture and analyze motion data for all kinds of uses. It's a versatile and easy-to-use tool.",
       },
       // {
       //   text: "During our web development class, we developed a canteen ordering system to make it easy for students and staff to order meals. It's a user-friendly web app with a simple interface. People can browse the menu, pick what they want, and place orders smoothly. This system helps the canteen staff work better, manage orders accurately, and makes eating at school a breeze for everyone.",
