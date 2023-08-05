@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/justineupano/static/css/main.1fca70c5.css",
-    "main.js": "/justineupano/static/js/main.9a7df670.js",
+    "main.js": "/justineupano/static/js/main.08586405.js",
     "static/media/students.gif": "/justineupano/static/media/students.a8b486fc72b322b69086.gif",
     "static/media/enrollment_3.gif": "/justineupano/static/media/enrollment_3.35b11ff595a2f635e979.gif",
     "static/media/cute_dev.jpg": "/justineupano/static/media/cute_dev.cd21c71edba6f006523d.jpg",
@@ -37,6 +37,7 @@
     "static/media/dashboard.png": "/justineupano/static/media/dashboard.bce541ce700cb29fb8c4.png",
     "static/media/tables_2.png": "/justineupano/static/media/tables_2.ffadbac395b44e04ab7b.png",
     "static/media/orders.png": "/justineupano/static/media/orders.8d0098fc1a7d38f7e884.png",
+    "static/media/Thumbnail.png": "/justineupano/static/media/Thumbnail.de20b9bef4405a0970a6.png",
     "static/media/enrolled.png": "/justineupano/static/media/enrolled.8cc0526593a5c057eebd.png",
     "static/media/all.png": "/justineupano/static/media/all.b56fa8941de8659f81df.png",
     "static/media/accounts_4.png": "/justineupano/static/media/accounts_4.3050777876c478ec772c.png",
@@ -54,10 +55,10 @@
     "static/media/facebook.svg": "/justineupano/static/media/facebook.5b31b3be5edeaaece65f44643db3f13d.svg",
     "static/media/rightArrow.svg": "/justineupano/static/media/rightArrow.bfcc0e2ba1a9b6bd8299788248a44070.svg",
     "main.1fca70c5.css.map": "/justineupano/static/css/main.1fca70c5.css.map",
-    "main.9a7df670.js.map": "/justineupano/static/js/main.9a7df670.js.map"
+    "main.08586405.js.map": "/justineupano/static/js/main.08586405.js.map"
   },
   "entrypoints": [
     "static/css/main.1fca70c5.css",
-    "static/js/main.9a7df670.js"
+    "static/js/main.08586405.js"
   ]
 }
