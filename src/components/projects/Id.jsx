@@ -96,7 +96,7 @@ const Id = ({ setIsHome }) => {
                   </div>
 
                   {repo.problem && (
-                    <div className="grid place-items-center gap-4 my-12 ">
+                    <div className="grid place-items-center gap-4 mt-12 ">
                       <div className="p-5 bg-red-100 rounded-lg w-4/5 dark:bg-darkBorder">
                         <h5 className="font-semibold dark:text-darkH text-center sm:text-left ">
                           Problem
@@ -116,12 +116,11 @@ const Id = ({ setIsHome }) => {
                     </div>
                   )}
 
-                  <div className="w-full">
+                  <div className="w-full mt-12">
                     <div className="grid place-items-center">
                       <h3 className="mb-5 text-xl font-bold dark:text-darkH self-start">
                         Features and Functionalities
                       </h3>
-
                       <div className="w-11/12 sm:w-full max-w-[667px]">
                         {repo.features &&
                           repo.features.map((feature, index) => {
