@@ -2,10 +2,18 @@ import { ReactComponent as Github } from "../images/github.svg";
 import { ReactComponent as Linkedin } from "../images/linkedin.svg";
 import { ReactComponent as Facebook } from "../images/facebook.svg";
 import { TypeAnimation } from "react-type-animation";
+import { useSpring, animated, useTrail } from "@react-spring/web";
 
 const Landing = () => {
+  const landing = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    duration: 2000,
+  });
+
   return (
-    <section
+    <animated.section
+      style={landing}
       className="flex justify-center items-center h-screen"
       id="landing-section"
       name="landing-section"
@@ -99,7 +107,7 @@ const Landing = () => {
           alt=""
         />
       </div>
-    </section>
+    </animated.section>
   );
 };
 
