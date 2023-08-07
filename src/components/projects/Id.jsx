@@ -149,7 +149,7 @@ const Id = ({ setIsHome }) => {
             </div>
           </div>
         ) : (
-          <div className="h-[80vh] grid place-items-center font-bold">
+          <div className="h-40 grid place-items-center font-bold dark:text-darkH">
             Loading..
           </div>
         )}

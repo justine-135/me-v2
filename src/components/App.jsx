@@ -29,7 +29,7 @@ const App = () => {
   }, [theme]);
 
   return (
-    <main className="App font-encode dark:bg-darkBg">
+    <main className="App font-encode min-h-screen grid dark:bg-darkBg">
       <Overlay menu={menu} />
 
       <Router>
@@ -49,8 +49,7 @@ const App = () => {
           <Route path="*" element={<Page404 />} />
         </Routes>
       </Router>
-      <Footer />
-      {/* <Page404 / */}
+      <Footer className="mt-auto" />
     </main>
   );
 };
