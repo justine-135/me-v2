@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/justineupano/static/css/main.041b2b30.css",
-    "main.js": "/justineupano/static/js/main.996f5914.js",
+    "main.css": "/justineupano/static/css/main.ae7a3e83.css",
+    "main.js": "/justineupano/static/js/main.c2d9a1f4.js",
     "static/media/students.gif": "/justineupano/static/media/students.a8b486fc72b322b69086.gif",
     "static/media/enrollment_3.gif": "/justineupano/static/media/enrollment_3.35b11ff595a2f635e979.gif",
     "static/media/cute_dev.jpg": "/justineupano/static/media/cute_dev.cd21c71edba6f006523d.jpg",
@@ -54,11 +54,11 @@
     "static/media/menu.svg": "/justineupano/static/media/menu.fda74093c4c5f2cc8ba4c5a89472d214.svg",
     "static/media/facebook.svg": "/justineupano/static/media/facebook.5b31b3be5edeaaece65f44643db3f13d.svg",
     "static/media/rightArrow.svg": "/justineupano/static/media/rightArrow.bfcc0e2ba1a9b6bd8299788248a44070.svg",
-    "main.041b2b30.css.map": "/justineupano/static/css/main.041b2b30.css.map",
-    "main.996f5914.js.map": "/justineupano/static/js/main.996f5914.js.map"
+    "main.ae7a3e83.css.map": "/justineupano/static/css/main.ae7a3e83.css.map",
+    "main.c2d9a1f4.js.map": "/justineupano/static/js/main.c2d9a1f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.041b2b30.css",
-    "static/js/main.996f5914.js"
+    "static/css/main.ae7a3e83.css",
+    "static/js/main.c2d9a1f4.js"
   ]
 }
