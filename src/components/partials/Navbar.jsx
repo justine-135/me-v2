@@ -1,7 +1,6 @@
 import { ReactComponent as Moon } from "../../images/moon.svg";
 import { ReactComponent as Menu } from "../../images/menu.svg";
 import { ReactComponent as Exit } from "../../images/exit.svg";
-import Fade from "react-reveal/Fade";
 import { useSpring, animated } from "@react-spring/web";
 import { useState, useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
@@ -15,6 +14,12 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
   const animateMenu = useSpring({
     from: { right: "-100%" },
     to: { right: menu && windowSize < 768 ? "0%" : "-100%" },
+  });
+
+  const nav = useSpring({
+    from: { marginTop: "-100px", opacity: 0 },
+    to: { marginTop: "0px", opacity: 1 },
+    delay: 500,
   });
 
   const handleThemeSwitch = () => {
@@ -82,18 +87,18 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
         >
           <Exit className="h-8 w-8 dark:fill-darkH" />
         </button>
-        <div className="flex flex-col md:flex-row items-center justify-between w-11/12 max-w-[1256px]">
-          <ScrollLink
-            to="home-section"
-            spy={true}
-            smooth={true}
-            duration={500}
+        <animated.div
+          style={nav}
+          className="flex flex-col md:flex-row items-center justify-between w-11/12 max-w-[1256px]"
+        >
+          <RouterLink
+            to="/"
             className="hidden md:block font-extrabold text-xl cursor-pointer dark:text-darkH"
             onClick={handleCloseMenu}
           >
             Justine's Hub
-          </ScrollLink>
-          <Fade cascade right when={windowSize < 768 ? menu : true}>
+          </RouterLink>
+          <div>
             {isHome ? (
               <ul className="flex flex-col items-center md:items-start font-semibold md:flex-row gap-6 dark:text-darkP">
                 <li>
@@ -139,15 +144,15 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
                 </button>
                 <RouterLink
                   className="font-semibold hover:underline hover:underline-offset-2 dark:text-darkP duration-75"
-                  to="/justineupano"
+                  to="/"
                   onClick={handleCloseMenu}
                 >
                   Go back
                 </RouterLink>
               </div>
             )}
-          </Fade>
-        </div>
+          </div>
+        </animated.div>
       </animated.nav>
     </div>
   );
