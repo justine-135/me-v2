@@ -5,6 +5,8 @@ import Overlay from "./partials/Overlay";
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Id from "./projects/Id";
+import Page404 from "./Page404";
+
 const App = () => {
   const [theme, setTheme] = useState(null);
   const [menu, setMenu] = useState(false);
@@ -39,18 +41,16 @@ const App = () => {
           isHome={isHome}
         />
         <Routes>
-          <Route
-            index
-            path="/justineupano"
-            element={<Home setIsHome={setIsHome} />}
-          />
+          <Route index path="/" element={<Home setIsHome={setIsHome} />} />
           <Route
             path="/projects/:route"
             element={<Id setIsHome={setIsHome} />}
           />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </Router>
       <Footer />
+      {/* <Page404 / */}
     </main>
   );
 };
