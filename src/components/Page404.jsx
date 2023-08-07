@@ -1,13 +1,22 @@
+import { Link } from "react-router-dom";
+
 const Page404 = () => {
   return (
     <div className="min-h-screen grid place-items-center">
       <div className="flex items-center">
         <div>
-          <h1 className="font-extrabold text-xl dark:text-darkH text-center sm:text-left">
+          <h1 className="font-extrabold text-3xl mb-3 dark:text-darkH text-center sm:text-left">
             Error 404
           </h1>
-          <p className="font-semibold dark:text-darkP">
+          <p className="font-semibold mb-2 dark:text-darkP">
             Oops! Seems like the page is not found..
+          </p>
+          <p>
+            Click{" "}
+            <Link className="underline" to="/">
+              here
+            </Link>{" "}
+            to go back.
           </p>
         </div>
         <img
