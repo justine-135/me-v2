@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/justineupano/static/css/main.1fca70c5.css",
-    "main.js": "/justineupano/static/js/main.a4ccda67.js",
+    "main.js": "/justineupano/static/js/main.08586405.js",
     "static/media/students.gif": "/justineupano/static/media/students.a8b486fc72b322b69086.gif",
     "static/media/enrollment_3.gif": "/justineupano/static/media/enrollment_3.35b11ff595a2f635e979.gif",
     "static/media/cute_dev.jpg": "/justineupano/static/media/cute_dev.cd21c71edba6f006523d.jpg",
@@ -55,10 +55,10 @@
     "static/media/facebook.svg": "/justineupano/static/media/facebook.5b31b3be5edeaaece65f44643db3f13d.svg",
     "static/media/rightArrow.svg": "/justineupano/static/media/rightArrow.bfcc0e2ba1a9b6bd8299788248a44070.svg",
     "main.1fca70c5.css.map": "/justineupano/static/css/main.1fca70c5.css.map",
-    "main.a4ccda67.js.map": "/justineupano/static/js/main.a4ccda67.js.map"
+    "main.08586405.js.map": "/justineupano/static/js/main.08586405.js.map"
   },
   "entrypoints": [
     "static/css/main.1fca70c5.css",
-    "static/js/main.a4ccda67.js"
+    "static/js/main.08586405.js"
   ]
 }
