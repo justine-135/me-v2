@@ -14,7 +14,7 @@ const Experience = () => {
       <div className="flex flex-col gap-5 w-full md:w-4/5 ">
         {experiences.map((exp, index) => {
           return (
-            <Fade left key={index}>
+            <Fade bottom key={index}>
               <div className="text-center sm:text-left">
                 <a
                   href={exp.url}

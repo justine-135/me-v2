@@ -13,7 +13,7 @@ const Technology = () => {
         </p>
       </Fade>
       <div className="flex flex-col gap-2 w-full md:w-4/5 text-p dark:text-darkP text-sm sm:text-base text-justify sm:text-left">
-        <Fade left>
+        <Fade bottom>
           <p className="font-josefin">
             I used various tools for web development, including UI design,
             server-side apps, database management, and version control for team.

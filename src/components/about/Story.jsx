@@ -9,7 +9,7 @@ const Story = () => {
         </p>
       </Fade>
       <div className="font-josefin flex flex-col gap-2 w-full text-p md:w-4/5 text-sm sm:text-base text-justify sm:text-left">
-        <Fade left>
+        <Fade bottom>
           <p className="dark:text-darkP">
             As a soon-to-be graduate, I love technology and solving problems.
             I've focused on software development during my studies, working with
@@ -18,7 +18,7 @@ const Story = () => {
             smart and creative solutions.
           </p>
         </Fade>
-        <Fade left>
+        <Fade bottom>
           <p className="dark:text-darkP">
             I'm eager to begin my journey as a software developer and put my
             theoretical knowledge into practice. Collaborating with experienced
@@ -27,7 +27,7 @@ const Story = () => {
             and professional growth.
           </p>
         </Fade>
-        <Fade left>
+        <Fade bottom>
           <p className="dark:text-darkP">
             In the future, I'm determined to level up my expertise and stay
             updated with the latest technologies. I want to create cutting-edge
