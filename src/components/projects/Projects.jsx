@@ -14,7 +14,6 @@ const Projects = () => {
 
   const [activeHighlight, setActiveHighlight] = useState(true);
   const [activePersonal, setActivePersonal] = useState(false);
-  const [activeAll, setActiveAll] = useState(false);
   const [sortedProjects, setSortedProjects] = useState(null);
 
   const [limit, setLimit] = useState(5);
@@ -36,30 +35,16 @@ const Projects = () => {
       );
       return;
     }
-    if (activeAll) {
-      setSortedProjects(
-        projects.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-      );
-      return;
-    }
-  }, [activeHighlight, activePersonal, activeAll]);
+  }, [activeHighlight, activePersonal]);
 
   const handleActiveHighlight = () => {
     setActiveHighlight(true);
     setActivePersonal(false);
-    setActiveAll(false);
     setLimit(5);
   };
   const handleActivePersonal = () => {
     setActiveHighlight(false);
     setActivePersonal(true);
-    setActiveAll(false);
-    setLimit(5);
-  };
-  const handleActiveAll = () => {
-    setActiveHighlight(false);
-    setActivePersonal(false);
-    setActiveAll(true);
     setLimit(5);
   };
 
@@ -97,16 +82,6 @@ const Projects = () => {
             >
               Sides
             </button>
-            {/* <button
-              className={`pl-1 pr-5 font-bold border-b-4 dark:text-darkH ${
-                activeAll
-                  ? " border-[#0ea5e9]"
-                  : "border-[#d1d5db] dark:border-[#164e63]"
-              }`}
-              onClick={handleActiveAll}
-            >
-              All
-            </button> */}
           </div>
           <div className="flex flex-col items-center gap-10">
             <div
