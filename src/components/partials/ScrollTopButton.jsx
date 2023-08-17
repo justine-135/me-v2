@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
-import { Link as ScrollLink } from "react-scroll";
 import { ReactComponent as Arrow } from "../../images/rightArrow.svg";
 
 const ScrollTopButton = () => {
@@ -13,6 +12,13 @@ const ScrollTopButton = () => {
     let scrollPercent = scrollTop / (docHeight - winHeight);
     let scrollPercentRounded = Math.round(scrollPercent * 100);
     setScrollPosition(scrollPercentRounded);
+  };
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   useEffect(() => {
@@ -33,14 +39,9 @@ const ScrollTopButton = () => {
         className="absolute h-full w-full border-4 border-black dark:border-darkH rounded-full"
         style={animateMenu}
       >
-        <ScrollLink
-          to="landing-section"
-          spy={true}
-          smooth={true}
-          duration={500}
-        >
+        <button onClick={handleScrollToTop}>
           <Arrow className="absolute h-4 w-4 md:h-8 md:w-8 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 -rotate-90 cursor-pointer dark:fill-darkH" />
-        </ScrollLink>
+        </button>
       </animated.div>
       <div
         className="absolute h-full w-full bg-white dark:bg-darkBg"
