@@ -14,7 +14,7 @@ const About = () => {
       <div className="w-11/12 md:w-2/4 max-w-[550px]">
         <HeadShake>
           <h3 className="font-extrabold text-xl dark:text-darkH text-center sm:text-left">
-            About 🐱‍👓
+            About 👨‍🎓
           </h3>
         </HeadShake>
 
