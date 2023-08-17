@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import data from "../../data";
 import ScrollTopButton from "../partials/ScrollTopButton";
 import { ReactComponent as Github } from "../../images/github.svg";
+import { useLocation } from "react-router-dom";
 
 const Id = ({ setIsHome }) => {
   const { route } = useParams();
@@ -21,6 +22,15 @@ const Id = ({ setIsHome }) => {
       }
     });
   });
+
+  const routePath = useLocation();
+
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  };
+  useEffect(() => {
+    onTop();
+  }, [routePath]);
 
   return (
     <div className="flex items-center justify-center w-full">
