@@ -8,7 +8,7 @@ const Landing = () => {
   const landing = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
-    duration: 2000,
+    duration: 10000,
   });
 
   return (
@@ -22,13 +22,13 @@ const Landing = () => {
         <div className="flex flex-col items-center sm:items-start gap-2 w-full md:w-3/4">
           <TypeAnimation
             sequence={[
-              "Hey there, coding champs 🐱‍💻",
+              "Hey there, coding champs! 🦾",
               1000,
-              "Hey there, coding gurus 🐱‍👤",
+              "Hey there, coding gurus! 💻",
               1000,
-              "Hey there, coding pros 🐱‍🏍",
+              "Hey there, coding pros! 🤸",
               1000,
-              "Hey there, coding maestros 🐱‍🚀",
+              "Hey there, coding maestros! 🦸",
               1000,
             ]}
             wrapper="span"
