@@ -72,7 +72,7 @@ const repos = [
   },
   {
     name: "Blog Posting Site",
-    type: "other",
+    type: "sides",
     body: "The MERN-based blog web app offers users a seamless, modern platform to create, manage, and share dynamic blog posts worldwide.",
     createdAt: "2023-07-22",
     languages: [
@@ -98,7 +98,7 @@ const repos = [
   },
   {
     name: "Interactive Pricing Component",
-    type: "other",
+    type: "challenge",
     body: "Build an interactive pricing component complete with custom range input slider and pricing toggle. A perfect way to test my JS skills.",
     createdAt: "2023-07-17",
     languages: [
@@ -116,7 +116,7 @@ const repos = [
   },
   {
     name: "Static Job Listings",
-    type: "other",
+    type: "challenge",
     body: "Using JavaScript to filter out jobs based on selected categories. Provided a local JSON file to help practice working with JSON data.",
     createdAt: "2023-07-16",
     languages: [
@@ -134,7 +134,7 @@ const repos = [
   },
   {
     name: "React Countries",
-    type: "other",
+    type: "challenge",
     body: "Test my JavaScript skills for this challenge. Use React and Axios to pull data from the REST Countries API.",
     createdAt: "2023-07-15",
     languages: [
@@ -456,7 +456,7 @@ const repos = [
   // },
   {
     name: "To Do List - DnD",
-    type: "other",
+    type: "sides",
     body: "React to do list with drag and drop functionality. Used react-beautiful-dnd to enable drag and drop.",
     createdAt: "2023-07-12",
     languages: [
@@ -474,7 +474,7 @@ const repos = [
   },
   {
     name: "Frontend Task",
-    type: "other",
+    type: "sides",
     body: "My first freelance task is to build a similar design to stackoverflow but simpler using Bootstrap5.",
     createdAt: "2021-09-14",
     languages: [
@@ -492,7 +492,7 @@ const repos = [
   },
   {
     name: "Maze game",
-    type: "other",
+    type: "sides",
     body: "My own scary maze game to try out with friends. The idea and concept was based on the popular maze game.",
     createdAt: "2021-10-30",
     languages: [
@@ -514,7 +514,7 @@ const repos = [
   },
   {
     name: "Bookmark Website",
-    type: "other",
+    type: "challenge",
     body: "A frontend mentor challenge that test layout skills. There are also areas that will require some JavaScript, such as the tabbed features section and the FAQ accordion.",
     createdAt: "2021-09-11",
     languages: [
@@ -532,7 +532,7 @@ const repos = [
   },
   {
     name: "Todo list",
-    type: "other",
+    type: "challenge",
     body: "Intermediate frontend mentor challange. Todo list with filter data functionality and animation.",
     createdAt: "2021-08-25",
     languages: [
@@ -550,7 +550,7 @@ const repos = [
   },
   {
     name: "Food Recipe App",
-    type: "other",
+    type: "sides",
     body: "Display food recipe from an API called edamam. Used Axios to access the endpoints.",
     createdAt: "2021-08-09",
     languages: [
@@ -572,7 +572,7 @@ const repos = [
   },
   {
     name: "Rock Paper Scissor",
-    type: "other",
+    type: "sides",
     body: "Rock paper scissor game using pure HTML, CSS, and Javascript.",
     createdAt: "2021-07-23",
     languages: [
@@ -594,7 +594,7 @@ const repos = [
   },
   {
     name: "Facebook Dropdown Menu",
-    type: "other",
+    type: "sides",
     body: "Re-created the old facebook dropdown menu using HTML, CSS, and Javascript",
     createdAt: "2021-07-23",
     languages: [
@@ -616,7 +616,7 @@ const repos = [
   },
   {
     name: "Card Hover",
-    type: "other",
+    type: "sides",
     body: "Simple card collection with hover animation.",
     createdAt: "2021-07-23",
     languages: [
@@ -637,8 +637,30 @@ const repos = [
     liveUrl: "https://justine-miniproject-cardsystem.netlify.app/",
   },
   {
+    name: "IP Address Tracker",
+    type: "challenge",
+    body: "Show map geolocation by searching IP address using leaflet, and IP geolocation API.",
+    createdAt: "2023-08-22",
+    languages: [
+      {
+        name: "ReactJS",
+        bg: "#a5b4fc",
+      },
+      {
+        name: "API",
+        bg: "#d8b4fe",
+      },
+      {
+        name: "Sass",
+        bg: "#fda4af",
+      },
+    ],
+    repoUrl: "https://github.com/justine-135/ip-address-tracker",
+    liveUrl: "https://justine-135.github.io/ip-address-tracker/",
+  },
+  {
     name: "Landing Page Animation",
-    type: "other",
+    type: "sides",
     body: "Simple landing page animation using GSAP library.",
     createdAt: "2021-05-11",
     languages: [
@@ -698,9 +720,6 @@ const experiences = [
     achievements: [
       {
         text: "Developed a web-based learning system for teachers and school admins. It does a lot by managaging student data, like grades, and personal info. Plus, there's a grading system to make it easy for teachers to assess students' progress accurately.",
-      },
-      {
-        text: "Conceptualized and designed a mini hydroponics system just for growing lettuces in the school garden. We used a special water solution full of nutrients to grow really healthy and green lettuces. It's a sustainable and eco-friendly way to garden right at school.",
       },
     ],
   },
