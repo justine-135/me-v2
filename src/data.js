@@ -737,7 +737,13 @@ const experiences = [
     endDate: "2023-06",
     achievements: [
       {
-        text: "Developed a web-based learning system for teachers and school admins. It does a lot by managaging student data, like grades, and personal info. Plus, there's a grading system to make it easy for teachers to assess students' progress accurately.",
+        text: "Acquired a comprehensive understanding of novel concepts and coding patterns while engaging in the process of crafting PHP programs. Delved into unfamiliar techniques and methodologies, broadening my skill set and enhancing my proficiency in PHP programming.",
+      },
+      {
+        text: "Took an active role in the collaborative design process of a student management system. Engaged in discussions, planning, and decision-making to shape the system's features, functionalities, and user experience.",
+      },
+      {
+        text: "Collaborated with team to develop a web-based student management system tailored for teachers, and admins for tracking student informations, and grades.",
       },
     ],
   },
@@ -749,14 +755,14 @@ const experiences = [
     endDate: "Present",
     achievements: [
       {
-        text: "For our research project, me and my team created an online ordering system called Dad'z GrillHouse for a local samgyupsal (Korean BBQ) restaurant. Customers can order their food online, and the restaurant staff can easily keep track of the orders using a smart caller device. It makes the dining experience so much smoother and better.",
+        text: "Acquired a strong foundation in programming involves understanding the basics of coding, understanding data structures and algorithms, learning about object-oriented programming, and gaining expertise in software design and development.",
       },
       {
-        text: "In our embedded systems subject, we built web-based motion capture system using a regular webcam and Python. With this new technology, users can capture and analyze motion data for all kinds of uses. It's a versatile and easy-to-use tool.",
+        text: "Successfully fulfilled a sequence of pertinent assignments within our programming, data structures, and software development curriculum. These tasks collectively constituted a culmination of our efforts towards meeting the final requirements of the course. Through active participation, diligent development, and timely completion, I engaged with the subject matter to achieve a comprehensive understanding and practical application of the concepts covered.",
       },
-      // {
-      //   text: "During our web development class, we developed a canteen ordering system to make it easy for students and staff to order meals. It's a user-friendly web app with a simple interface. People can browse the menu, pick what they want, and place orders smoothly. This system helps the canteen staff work better, manage orders accurately, and makes eating at school a breeze for everyone.",
-      // },
+      {
+        text: "Created impactful fullstack apps that contributed to academic milestones including embedded systems, on-the-job training, and final research project. Merged frontend and backend seamlessly, demonstrating skills in development and applying theoretical knowledge practically.",
+      },
     ],
   },
 ];
