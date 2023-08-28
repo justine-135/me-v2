@@ -659,6 +659,24 @@ const repos = [
     liveUrl: "https://justine-135.github.io/ip-address-tracker/",
   },
   {
+    name: "Multi-step Form",
+    type: "challenge",
+    body: "Show 4 steps form, and retain data on next, and previous page. Show summary at the end of the step.",
+    createdAt: "2023-08-26",
+    languages: [
+      {
+        name: "ReactJS",
+        bg: "#a5b4fc",
+      },
+      {
+        name: "Sass",
+        bg: "#fda4af",
+      },
+    ],
+    repoUrl: "https://github.com/justine-135/multi-step-form",
+    liveUrl: "https://justine-135.github.io/multi-step-form/",
+  },
+  {
     name: "Landing Page Animation",
     type: "sides",
     body: "Simple landing page animation using GSAP library.",
