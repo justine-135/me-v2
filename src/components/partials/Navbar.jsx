@@ -2,15 +2,19 @@ import { ReactComponent as Moon } from "../../images/moon.svg";
 import { ReactComponent as Menu } from "../../images/menu.svg";
 import { ReactComponent as Exit } from "../../images/exit.svg";
 import { useSpring, animated } from "@react-spring/web";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import useScrollBlock from "../../useScrollBlock";
 
 const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
   const navigate = useNavigate();
   const [blockScroll, allowScroll] = useScrollBlock();
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  const handleCachedTheme = useCallback(() => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  }, [setTheme, theme]);
 
   const animateMenu = useSpring({
     from: { right: "-100%" },
@@ -24,7 +28,7 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
   });
 
   const handleThemeSwitch = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    handleCachedTheme();
   };
 
   useEffect(() => {
@@ -41,7 +45,6 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
 
   useEffect(() => {
     if (windowSize >= 768) {
-      setTheme(false);
       setMenu(false);
       allowScroll();
     }
@@ -72,16 +75,13 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
       <div className="fixed -top-5 h-20 w-full blur-md md:blur-none bg-white dark:bg-darkBg md:bg-transparent md:dark:bg-transparent z-10"></div>
       <nav className="fixed top-0 flex justify-center w-full bg-transparent h-16 z-20 md:hidden">
         <div className="flex justify-between items-center w-11/12">
-          <button
-            to="home-section"
-            spy={true}
-            smooth={true}
-            duration={500}
+          <Link
+            to="/"
             className="font-extrabold text-xl dark:text-darkH cursor-pointer"
             onClick={handleHomeBtn}
           >
             Justine's Hub
-          </button>
+          </Link>
           <button className="" onClick={handleOpenMenu}>
             <Menu className="h-8 w-8 dark:fill-darkH" />
           </button>
@@ -102,12 +102,13 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
           style={nav}
           className="flex flex-col md:flex-row items-center justify-between w-11/12 max-w-[1256px]"
         >
-          <button
+          <Link
+            to="/"
             className="hidden md:block font-extrabold text-xl cursor-pointer dark:text-darkH"
             onClick={handleHomeBtn}
           >
             Justine's Hub
-          </button>
+          </Link>
           <div>
             {isHome ? (
               <ul className="flex flex-col items-center md:items-start font-semibold md:flex-row gap-6 dark:text-darkP">
