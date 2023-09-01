@@ -312,11 +312,6 @@ const repos = [
         name: "James Ferrer",
       },
     ],
-    features: [
-      {
-        text: "",
-      },
-    ],
     languages: [
       {
         name: "PHP",
@@ -669,6 +664,10 @@ const repos = [
         bg: "#a5b4fc",
       },
       {
+        name: "Redux",
+        bg: "#c084fc",
+      },
+      {
         name: "Sass",
         bg: "#fda4af",
       },
@@ -709,7 +708,7 @@ const technologies = [
   {
     title: "Frontend",
     underline: "#fde68a",
-    techs: ["React", "Tailwind", "Sass", "Bootstrap"],
+    techs: ["React", "Tailwind", "Sass", "Bootstrap", "Redux"],
   },
   {
     title: "Backend",
