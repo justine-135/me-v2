@@ -18,7 +18,7 @@ const Project = ({ repo }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Github className="h-5 w-5 fill-slate-900 hover:fill-slate-500 dark:fill-darkBorderHover" />
+                  <Github className="h-7 w-7 fill-slate-900 hover:fill-slate-500 dark:fill-darkBorderHover" />
                 </a>
               </li>
               {repo.liveUrl && (
@@ -29,7 +29,7 @@ const Project = ({ repo }) => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <Live className="h-5 w-5 fill-slate-900 dark:fill-darkBorderHover" />
+                    <Live className="h-7 w-7 fill-slate-900 dark:fill-darkBorderHover" />
                   </a>
                 </li>
               )}
