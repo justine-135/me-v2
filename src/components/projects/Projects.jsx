@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Fade from "react-reveal/Fade";
-import HeadShake from "react-reveal/HeadShake";
 import { Element } from "react-scroll";
 import data from "../../data";
 import Project from "./Project";
@@ -35,11 +34,10 @@ const Projects = () => {
     >
       <div className="flex justify-between w-11/12 md:w-2/4 max-w-[550px]">
         <div className="flex flex-col items-center gap-2 w-full sm:items-start">
-          <HeadShake>
-            <h4 className="font-extrabold text-xl dark:text-darkH text-center sm:text-left">
-              Projects 💻
-            </h4>
-          </HeadShake>
+          <h4 className="font-extrabold text-xl dark:text-darkH text-center sm:text-left">
+            Projects 💻
+          </h4>
+
           <div className="flex mb-6 mt-4">
             <button
               className={`pl-1 pr-5 font-bold border-b-4 dark:text-darkH ${
