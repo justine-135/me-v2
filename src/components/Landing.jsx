@@ -2,7 +2,7 @@ import { ReactComponent as Github } from "../images/github.svg";
 import { ReactComponent as Linkedin } from "../images/linkedin.svg";
 import { ReactComponent as Facebook } from "../images/facebook.svg";
 import { TypeAnimation } from "react-type-animation";
-import { useSpring, animated, useTrail } from "@react-spring/web";
+import { useSpring, animated } from "@react-spring/web";
 
 const Landing = () => {
   const landing = useSpring({
@@ -38,10 +38,11 @@ const Landing = () => {
             className="font-extrabold text-xl dark:text-darkH text-center sm:text-left"
           />
           <p className="font-josefin text-p dark:text-darkP text-center text-sm sm:text-base sm:text-left">
-            I'm Justine Upano, a web developer.
+            Hi, my name is Justine Upano, a React developer specialized in
+            crafting polished and performance-driven web solutions.
           </p>
-          <p className="font-josefin text-p dark:text-darkP text-center text-sm sm:text-base sm:text-left">
-            I am a Computer Engineering Technology major in{" "}
+          {/* <p className="font-josefin text-p dark:text-darkP text-center text-sm sm:text-base sm:text-left">
+            I am a Computer Engineering Technology graduate in{" "}
             <a
               className="font-semibold text-black dark:text-darkH"
               href="https://www.tupcavite.edu.ph/"
@@ -52,7 +53,7 @@ const Landing = () => {
             </a>
             . With my graduation just around the corner, I'm ready to conquer
             the tech world.
-          </p>
+          </p> */}
           <ul className="flex gap-2 mt-5 sm:mt-2">
             <li className="hover:-mt-1 duration-75">
               <a
