@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="flex items-center justify-center py-8 w-full">
       <div className="flex flex-col md:flex-row gap-2 items-center w-2/4 max-w-[550px]">
         <p className="font-josefin text-p text-center text-sm sm:text-base sm:text-left dark:text-darkP">
-          🐱‍👤 Built by Justine Upano.
+          🧑‍💻 Built by Justine Upano.
         </p>
         <p className="font-josefin text-p text-sm sm:text-base sm:text-left dark:text-darkP">
           All rights reserved ©.

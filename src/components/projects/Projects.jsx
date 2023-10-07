@@ -19,7 +19,7 @@ const Projects = () => {
         .filter((item) => item.type === projectType)
         .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
     );
-  }, [projectType]);
+  }, [projectType, projects]);
 
   const handleProjectTypeChange = (type) => {
     setLimit(5);

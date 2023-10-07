@@ -729,6 +729,18 @@ const technologies = [
 
 const experiences = [
   {
+    position: "React Developer",
+    company: "Newstars Solutions INC.",
+    url: "https://www.newstarsinc.com/",
+    startDate: "2023-09",
+    endDate: "Present",
+    achievements: [
+      {
+        text: "Ongoing..",
+      },
+    ],
+  },
+  {
     position: "Intern Computer Technologist",
     company: "Sabang Elementary School",
     url: "https://sabes.depeddasma.edu.ph/",

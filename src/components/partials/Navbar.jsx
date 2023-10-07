@@ -48,7 +48,7 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
       setMenu(false);
       allowScroll();
     }
-  }, [windowSize]);
+  }, [allowScroll, setMenu, windowSize]);
 
   const handleOpenMenu = () => {
     setMenu(true);
@@ -129,7 +129,7 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
                     className="cursor-pointer"
                     onClick={handleCloseMenu}
                   >
-                    🐱‍👓 About
+                    🧑‍💻 About
                   </ScrollLink>
                 </li>
                 <li>

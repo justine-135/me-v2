@@ -38,22 +38,19 @@ const Landing = () => {
             className="font-extrabold text-xl dark:text-darkH text-center sm:text-left"
           />
           <p className="font-josefin text-p dark:text-darkP text-center text-sm sm:text-base sm:text-left">
-            Hi, my name is Justine Upano, a React developer specialized in
-            crafting polished and performance-driven web solutions.
-          </p>
-          {/* <p className="font-josefin text-p dark:text-darkP text-center text-sm sm:text-base sm:text-left">
-            I am a Computer Engineering Technology graduate in{" "}
+            Hi, my name is Justine Upano, a{" "}
+            <b className="text-black">React developer</b> at{" "}
             <a
-              className="font-semibold text-black dark:text-darkH"
-              href="https://www.tupcavite.edu.ph/"
+              className="text-black font-bold hover:underline"
+              href="https://www.newstarsinc.com/"
               target="_blank"
               rel="noreferrer"
             >
-              Technical University of the Philippines
-            </a>
-            . With my graduation just around the corner, I'm ready to conquer
-            the tech world.
-          </p> */}
+              Newstars Solutions INC.
+            </a>{" "}
+            specialized in crafting polished and performance-driven web
+            solutions.
+          </p>
           <ul className="flex gap-2 mt-5 sm:mt-2">
             <li className="hover:-mt-1 duration-75">
               <a
