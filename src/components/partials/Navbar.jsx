@@ -100,7 +100,7 @@ const Navbar = ({ theme, setTheme, menu, setMenu, isHome }) => {
         </button>
         <animated.div
           style={nav}
-          className="flex flex-col md:flex-row items-center justify-between w-11/12 max-w-[1256px]"
+          className="flex flex-col md:flex-row items-center justify-between w-11/12 max-w-[1456px]"
         >
           <Link
             to="/"
