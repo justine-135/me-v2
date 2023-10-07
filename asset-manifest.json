@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/justineupano/static/css/main.bd6e781f.css",
-    "main.js": "/justineupano/static/js/main.fb56d0ee.js",
+    "main.js": "/justineupano/static/js/main.43b4c4e7.js",
     "static/media/students.gif": "/justineupano/static/media/students.a8b486fc72b322b69086.gif",
     "static/media/enrollment_3.gif": "/justineupano/static/media/enrollment_3.35b11ff595a2f635e979.gif",
     "static/media/cute_dev.jpg": "/justineupano/static/media/cute_dev.cd21c71edba6f006523d.jpg",
@@ -55,10 +55,10 @@
     "static/media/facebook.svg": "/justineupano/static/media/facebook.5b31b3be5edeaaece65f44643db3f13d.svg",
     "static/media/rightArrow.svg": "/justineupano/static/media/rightArrow.bfcc0e2ba1a9b6bd8299788248a44070.svg",
     "main.bd6e781f.css.map": "/justineupano/static/css/main.bd6e781f.css.map",
-    "main.fb56d0ee.js.map": "/justineupano/static/js/main.fb56d0ee.js.map"
+    "main.43b4c4e7.js.map": "/justineupano/static/js/main.43b4c4e7.js.map"
   },
   "entrypoints": [
     "static/css/main.bd6e781f.css",
-    "static/js/main.fb56d0ee.js"
+    "static/js/main.43b4c4e7.js"
   ]
 }
