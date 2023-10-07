@@ -729,23 +729,20 @@ const technologies = [
 
 const experiences = [
   {
+    id: 0,
     position: "React Developer",
     company: "Newstars Solutions INC.",
     url: "https://www.newstarsinc.com/",
-    startDate: "2023-09",
+    startDate: "09/2023",
     endDate: "Present",
-    achievements: [
-      {
-        text: "Ongoing..",
-      },
-    ],
   },
   {
+    id: 1,
     position: "Intern Computer Technologist",
     company: "Sabang Elementary School",
     url: "https://sabes.depeddasma.edu.ph/",
-    startDate: "2023-03",
-    endDate: "2023-06",
+    startDate: "03/2023",
+    endDate: "06/2023",
     achievements: [
       {
         text: "Acquired a comprehensive understanding of novel concepts and coding patterns while engaging in the process of crafting PHP programs. Delved into unfamiliar techniques and methodologies, broadening my skill set and enhancing my proficiency in PHP programming.",
@@ -759,11 +756,12 @@ const experiences = [
     ],
   },
   {
+    id: 2,
     position: "Computer Engineer Technologist",
     company: "Technological University of the Philippines - Cavite Campus",
     url: "https://www.tupcavite.edu.ph/",
-    startDate: "2019-05",
-    endDate: "Present",
+    startDate: "05/2019",
+    endDate: "09/2023",
     achievements: [
       {
         text: "Acquired a strong foundation in programming involves understanding the basics of coding, understanding data structures and algorithms, learning about object-oriented programming, and gaining expertise in software design and development.",

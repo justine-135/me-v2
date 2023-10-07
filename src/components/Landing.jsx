@@ -39,9 +39,9 @@ const Landing = () => {
           />
           <p className="font-josefin text-p dark:text-darkP text-center text-sm sm:text-base sm:text-left">
             Hi, my name is Justine Upano, a{" "}
-            <b className="text-black">React developer</b> at{" "}
+            <b className="text-black dark:text-darkH">React developer</b> at{" "}
             <a
-              className="text-black font-bold hover:underline"
+              className="text-black font-bold hover:underline dark:text-darkH"
               href="https://www.newstarsinc.com/"
               target="_blank"
               rel="noreferrer"

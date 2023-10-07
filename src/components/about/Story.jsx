@@ -1,10 +1,10 @@
+import SpanTitle from "../common/SubCategoryTitle";
+
 const Story = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between">
-      <p className="text-sm text-title-sm text-center mb-8 sm:mb-4 sm:text-left dark:text-darkP">
-        / Story
-      </p>
-      <div className="font-josefin flex flex-col gap-2 w-full text-p md:w-4/5 text-sm sm:text-base text-justify sm:text-left">
+    <section>
+      <SpanTitle>/ Story</SpanTitle>
+      <div className="font-josefin flex flex-col gap-2 w-full text-p text-sm sm:text-base text-justify sm:text-left">
         <p className="dark:text-darkP">
           I love technology and solving problems. I've focused on software
           development during my studies, working with programming languages like
@@ -26,7 +26,7 @@ const Story = () => {
           skilled software developer in the industry.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
