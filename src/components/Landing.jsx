@@ -81,14 +81,6 @@ const Landing = () => {
             </li>
           </ul>
           <div className="flex flex-col sm:flex-row gap-2 mt-5">
-            <a
-              href="https://drive.google.com/file/d/1eo4v9gSWjxL97iuzJkJYmeq-xdNqbrNz/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-              className="font-bold px-4 py-0 rounded-sm border-black border-2 hover:bg-orange-600 hover:border-orange-600 ease-in duration-75 dark:border-darkP dark:text-darkP dark:hover:border-orange-600 dark:hover:text-darkH"
-            >
-              ✉️ Resume
-            </a>
             <button
               className="font-bold px-4 py-0 rounded-sm border-black border-2 hover:bg-sky-600 hover:border-sky-600 ease-in duration-75 dark:border-darkP dark:text-darkP dark:hover:border-sky-600 dark:hover:text-darkH"
               onClick={() =>
